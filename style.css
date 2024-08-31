@@ -1,0 +1,558 @@
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* FONTS AND COLORS */
+:root {
+  --header-footer-bkg: #00b4d8;
+  --text-color1: #305583;
+  --headings-color: #153061;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+a {
+  color: var(--headings-color);
+}
+
+h1, h2, h3 {
+ color: var(--headings-color);
+}
+/* BODY ALL PAGES */
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #bad3d8;
+}
+
+/*anchor tags*/
+.home-page-links1, .home-page-links2, .home-page-links3 {
+  color: #153061;
+}
+
+/* NAVIGATION BAR ALL PAGES */
+header div {
+  background-color: var(--header-footer-bkg);
+  padding: 1em;
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-right: 20px;
+  z-index: 10;
+}
+
+nav li {
+  position: relative;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  background-color: var(--header-footer-bkg);
+  padding: 10px;
+  font-size: 20px;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 2px;
+}
+
+nav li ul li {
+  width: 100%;
+  padding: 0;
+  background-color: #999fff;
+}
+
+nav li ul li a {
+  padding: 10px;
+  display: block;
+}
+
+nav li ul li a:hover {
+  background-color: #f0f0f0;
+}
+
+nav li:hover ul {
+  display: block;
+}
+
+nav a:hover {
+  color: #153061;
+}
+/* Membership PAGE STARTS HERE */
+main {
+  padding: 50px;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.uncentered {
+  text-align: left;
+  padding: 10px; /*100*/
+  border: 2px solid #000;
+  background-color: #bad3d8;
+  height: 400px;
+  width: 60%;
+  font-size:20px;
+}
+.uncentered ul {
+  list-style: disc;
+  padding-left: 40px;
+}
+
+.form-text {
+  text-align:top;
+  font-size: 20px;
+  width:30%;
+  word-wrap: break-word;
+  margin-left: 3em;
+}
+
+.form-text img {
+  width:250px;
+  height:250px;
+  gap:600px;
+}
+
+.polaroids {
+  margin-top:15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.polaroids img {
+  width: 400px;
+  height: 450px;
+}
+/*
+.boxes {
+  text-align: left;
+  padding: 100px;
+  border: 2px solid #000;
+  background-color: #cdcdf9;
+  margin-bottom: 15px; /* Ensure spacing between .boxes and .belowbox */
+}
+/*
+.belowbox {
+  text-align: center;
+  padding: 100px;
+  border: 2px solid #000;
+  background-color: #cdcdf9;
+}
+*/
+/*Membership Page Ends Here*/
+/*Networking Page Starts Here*/
+
+.nw-top h2{
+  padding-top: 20px;
+}
+
+.discevent{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.discevent div:last-of-type {
+  margin-top: 35px;
+}
+
+
+.nw-links{
+  color: var(--headings-color);
+}
+
+
+
+/*Networking Page Ends Here */
+
+/* RESEARCH PAGE STARTS HERE */
+
+/*sets title properties*/
+.titleresearch{
+  padding: 2px;
+  padding-top: 20px;
+  border-bottom: 2px solid #000;
+  line-height: 5px;
+  margin-left:-50px;
+  margin-right:-50px;
+  
+}
+
+/*sets article properties*/
+#article #articleTitle{
+  width:400px;
+  height:260px;
+  position:relative;
+}
+#article{
+  margin-top:25px;
+  position:relative;
+  left:150px;
+  text-align: center;
+  padding:10px;
+  border: 2px solid #000;
+  font-size:30px;
+  margin-bottom: -120px;
+  width:500px;
+  height:1000px;
+  background-color: #d2c6f0 ;
+  border-radius: 10px;
+
+  
+  
+}
+/*sets article links properties*/
+#article a{
+  text-decoration: none;
+  background-color: #4a3a6f;
+  font-size: 20px;
+  margin-left: -30px;
+  color:white ;
+  border-radius: 10px;
+  padding:2px;
+  
+}
+.article-links-list li{
+  list-style: none;
+  line-height: 35px;
+  
+}
+#article a:hover{
+  background-color: #6a5b8a;
+}
+/*sets video properties*/
+#video #videoTitle{
+  padding-top: 20px;
+  width:400px;
+  height:260px;
+  position:relative;
+}
+#video{
+  margin-top: 25px;
+  position:absolute;
+  top:205px;
+  left:800px;
+  background-color: #d2c6f0;
+  border-radius: 10px;
+  border: 2px solid #000;
+  width:500px;
+  height:1020px;
+}
+#video a{
+  text-decoration: none;
+  background-color: #4a3a6f;
+  font-size: 50px; 
+  color:white ;
+  border-radius: 10px;
+  text-align: center;
+  padding:2px;
+  position: relative;
+  top:100px;
+}
+#video a:hover{
+  background-color: #6a5b8a;
+}
+#video #logo{
+  width:300px;
+  position:relative;
+  top:150px;
+  border-radius: 50%;
+}
+/*sets FOOTER properties*/
+#tagsR{
+  background-color: #020269;
+  margin-bottom:-80px;
+  display:flex;
+  color:white;
+  justify-content: space-evenly;
+  width:100vw;
+  height: 75px;
+  margin-left: -50px;
+  margin-top: 150px;
+}
+#tagsR h5 a {
+text-decoration: none;
+color:white;
+}
+#tagsR h5 a:hover{
+color: #baa8e6;
+}
+#tagsR img{
+  position:relative;
+  right:285px;
+  top:20px;
+  border-radius: 50%;
+}
+
+/* RESEARCH PAGE ENDS HERE */
+
+/* Our Team Page Starts Here */
+.aboutAvni {
+  text-align: left;
+  margin-right: 10%;
+  width: 70%;
+}
+.pictureAvni {
+  width: 20%;
+  height: auto;
+}
+
+.aboutErin {
+  text-align: left;
+  margin-right: 10%;
+  width: 70%;;
+}
+.pictureErin {
+  width: 20%;
+  height: auto;
+}
+
+.aboutMacie {
+  text-align: left;
+  margin-right: 10%;
+  width: 70%;
+}
+
+.pictureMacie {
+  width: 20%;
+  height: auto;
+}
+
+.aboutDaksh {
+  text-align: left;
+  margin-right: 10%;
+  width: 70%;;
+}
+.pictureDaksh {
+  width: 20%;
+  height: auto;
+
+}
+.aboutSanjay {
+  text-align: left;
+  margin-right: 10%;
+  width: 70%;
+}
+.pictureSanjay {
+  width: 20%;
+  height: auto;
+}
+.boxr {
+  text-align: left;
+  padding: 50px;
+  border: 2px solid #000;
+  background-color: #cdcdf9;
+  margin-bottom: 15px;
+  display: flex;
+}
+/* Our Team Page Ends Here */
+
+/*HOME PAGE STARTS HERE (part 1) */
+
+/* text style for home page headers*/
+.home-page-headers{
+  text-align:center;
+  color: var(--headings-color)
+}
+
+/* image style for home page icons*/
+
+.home-ic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -35px;
+}
+.home-ic div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-page-icons{
+  padding-top:20px; 
+  max-width:280px;
+  max-height:466.67px; 
+  margin-left:120px; 
+}
+
+/*/ text style for home page links*/
+.home-page-links1 {
+  color: var(--headings-color); 
+  font-size: 20px; 
+  margin-left:110px; 
+  padding-bottom:50px; 
+}
+
+.home-page-links2{
+  color: var(--headings-color); 
+  font-size: 20px; 
+  margin-left:130px;
+  padding-bottom:50px; 
+}
+
+.home-page-links3{
+  color: var(--headings-color); 
+  font-size: 20px; 
+  margin-left:160px; 
+  padding-bottom:50px; 
+}
+/* HOME PAGE ENDS HERE (part 1) */
+
+.wkshp-head {
+  display: flex; 
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 45px;
+}
+
+
+/* Competitions Page Start */
+.comp-head {
+  display: flex; 
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 45px;
+}
+
+.intro{
+  display: inline-flex;
+  padding-left: 500px;
+  padding-right: 50px;
+}
+
+.item1{
+  display: block;
+}
+
+.item2 {
+  display: block;
+}
+
+#calendar {
+  max-height: 200px;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 25px;
+}
+
+#starter {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.footer-title {
+  text-align: center;
+  color:white;
+}
+
+#ftr {
+  background-color: #020269;
+  color:white;
+  justify-content: space-evenly;
+  width:100vw;
+}
+
+.totalfooter {
+  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  display: block;
+  padding-left: 25px
+}
+
+.insta {
+  display: block;
+  padding-left: 25px
+}
+
+.tandm {
+  display: block;
+  padding-left: 25px
+}
+
+.MOTM {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.MOTM-header {
+ font-size: 35px
+}
+
+.MOTM-text {
+  color: var(--headings-color);
+}
+
+.MOTM-hr{
+  margin-top: 50px;
+  border: 1px solid  black
+}
+
+/* Competitions Page End */
+
+/* Position Page Start*/
+.Position {
+  padding-bottom: 50px;
+}
+
+hr.new{
+  border: 1px solid black;
+}
+
+.close {
+  width: 300px;
+  height: 400px;
+  padding-bottom: 40px;
+  mix-blend-mode: multiply;
+}
+
+.foot{
+  margin-bottom:-80px;
+  display:flex;
+  justify-content: space-evenly;
+  width:100vw;
+  margin-left: -50px;
+  text-decoration: underline;
+}
+/* Position Page End*/
